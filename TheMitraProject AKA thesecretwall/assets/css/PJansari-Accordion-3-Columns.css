@@ -1,0 +1,56 @@
+/* Faq section */
+
+.container {
+  padding-top: 25px;
+}
+
+p.accordion.active, p.accordion:hover {
+  background-color: #efb078;
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+p.accordion.active:before {
+  content: "-";
+  position: absolute;
+  float: left;
+  margin-top: -55px;
+  right: 5px;
+  color: #ed7f1d;
+}
+
+.accordion:before {
+  position: absolute;
+  content: '+';
+  font-weight: 800;
+  font-size: 50px;
+  right: 0px;
+  float: left;
+  color: #ed7f1d;
+  margin-top: -54px;
+}
+
+.accordion {
+  height: 100%;
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+@media (min-width: 768px) {
+  div.panel {
+    padding: 8px 18px;
+    background-color: white;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .panel {
+    background-color: white;
+    margin-bottom: 10px;
+  }
+}
+
